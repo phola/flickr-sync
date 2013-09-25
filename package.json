@@ -1,8 +1,8 @@
 {
   "name": "flickr-sync",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Flickr API CLI and archiving with parallel uploading",
-  "homepage": "https://github.com/chbrown/flickr-sync",
+  "homepage": "https://github.com/phola/flickr-sync",
   "keywords": [
     "flickr",
     "backup",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/chbrown/flickr-sync.git"
+    "url": "git://github.com/phola/flickr-sync.git"
   },
   "license": "MIT",
   "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",

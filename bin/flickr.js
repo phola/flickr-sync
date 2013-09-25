@@ -125,10 +125,19 @@ function main() {
     console.log(require('../package').version);
   }
   else {
-    var credentials_filepath = argv.credentials.replace(/^~/, process.env.HOME);
-    fs.readFile(credentials_filepath, 'utf8', function(err, data) {
-      var credentials = JSON.parse(data);
+    var credentials_filepath = "creds"//argv.credentials.replace(/^~/, process.env.HOME);
+//console.log(credentials_filepath);
+//fs.readFile(credentials_filepath, 'utf8', function(err, data) {
+      var credentials = {
+  "consumer_key": "0a1843eec4348c83d35bf9b772c2258b",
+  "consumer_secret": "d74282a9598e9a62",
+  "oauth_token": "72157635871553303-62ae6d8c2487b944",
+  "oauth_token_secret": "54b69fdc546c1dcc"
+};
+    //  console.log(argv);
 
+//console.log(credentials);
+      
       var plain_api = flickr(
         credentials.consumer_key,
         credentials.consumer_secret,
@@ -145,6 +154,7 @@ function main() {
 
       optimist = optimist.demand(1).check(function(argv) {
         var name = argv._[0];
+          console.log(name);
         if (commands[name] === undefined) {
           var message = 'The command, "' + name + '", is invalid. ';
           message += 'Valid commands are: "' + Object.keys(commands).join('", "') + '"';
@@ -153,9 +163,10 @@ function main() {
       });
 
       argv = optimist.argv;
-
+          
+console.log(argv + 'll');
       commands[argv._[0]](argv.verbose ? wrapped_api : plain_api, optimist);
-    });
+   // });
   }
 }
 

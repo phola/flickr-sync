@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'git://github.com/phola/flickr-sync' ]
+2 info using npm@1.3.8
+3 info using node@v0.10.18
+4 verbose node symlink E:\Program Files\nodejs\\node.exe
+5 warn package.json eyes@0.1.8 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'git://github.com/phola/flickr-sync', null ]
+8 verbose cache add name=undefined spec="git://github.com/phola/flickr-sync" args=["git://github.com/phola/flickr-sync",null]
+9 verbose parsed url { protocol: 'git:',
+9 verbose parsed url   slashes: true,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: 'github.com',
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: 'github.com',
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '/phola/flickr-sync',
+9 verbose parsed url   path: '/phola/flickr-sync',
+9 verbose parsed url   href: 'git://github.com/phola/flickr-sync' }
+10 silly lockFile 94c7284e-git-github-com-phola-flickr-sync git://github.com/phola/flickr-sync
+11 verbose lock git://github.com/phola/flickr-sync E:\Users\geoff\AppData\Roaming\npm-cache\94c7284e-git-github-com-phola-flickr-sync.lock
+12 verbose addRemoteGit [ 'git://github.com/phola/flickr-sync', 'master' ]
+13 silly lockFile 94c7284e-git-github-com-phola-flickr-sync git://github.com/phola/flickr-sync
+14 silly lockFile 94c7284e-git-github-com-phola-flickr-sync git://github.com/phola/flickr-sync
+15 error not found: git
+16 error Failed using git.
+16 error This is most likely not a problem with npm itself.
+16 error Please check if you have git installed and in your PATH.
+17 error System Windows_NT 6.1.7601
+18 error command "E:\\Program Files\\nodejs\\\\node.exe" "E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "git://github.com/phola/flickr-sync"
+19 error cwd J:\projects\flickr-sync\bin
+20 error node -v v0.10.18
+21 error npm -v 1.3.8
+22 error code ENOGIT
+23 verbose exit [ 1, true ]
